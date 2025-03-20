@@ -1,0 +1,280 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4EDE1;
+    color: #5C3D2E;
+    margin: 0;
+    padding: 0;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #EADBC8;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #8B5E3C;
+    margin-bottom: 10px;
+}
+
+.agregar-compra {
+    background-color: #8B5E3C;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.agregar-compra:hover {
+    background-color: #A67C52;
+}
+
+.detalles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.detalles a {
+    color: #5C3D2E;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.detalles a:hover {
+    text-decoration: underline;
+}
+
+.detalles button {
+    background-color: #8B5E3C;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.detalles button:hover {
+    background-color: #A67C52;
+}
+
+.producto_nuevo {
+    background-color: #EADBC8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+}
+
+.producto_nuevo fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.producto_nuevo legend {
+    font-weight: bold;
+    color: #5C3D2E;
+}
+
+.producto_nuevo input, .producto_nuevo select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #8B5E3C;
+    background-color: #F4EDE1;
+    color: #5C3D2E;
+}
+
+.erorrs {
+    background-color: #FFD1C1;
+    color: #8B0000;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4EDE1;
+    color: #5C3D2E;
+    margin: 0;
+    padding: 0;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #EADBC8;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #8B5E3C;
+}
+
+.agregar-compra, .detalles button, .producto_nuevo button {
+    background-color: #8B5E3C;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    display: inline-block;
+}
+
+.agregar-compra:hover, .detalles button:hover, .producto_nuevo button:hover {
+    background-color: #A67C52;
+}
+
+.detalles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.detalles a {
+    color: #5C3D2E;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.detalles a:hover {
+    text-decoration: underline;
+}
+
+.producto_nuevo {
+    background-color: #EADBC8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+}
+
+.producto_nuevo fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.producto_nuevo legend {
+    font-weight: bold;
+    color: #5C3D2E;
+}
+
+.producto_nuevo input, .producto_nuevo select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #8B5E3C;
+    background-color: #F4EDE1;
+    color: #5C3D2E;
+}
+
+.erorrs {
+    background-color: #FFD1C1;
+    color: #8B0000;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 6px;
+}
