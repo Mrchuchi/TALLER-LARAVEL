@@ -14,39 +14,38 @@ class ProductoSeeder extends Seeder
      */
     public function run(): void
     {
-        if (Schema::hasTable('productos')) {
-            DB::table('productos')->insert([
-                [
-                    'nombre' => 'Producto 1',
-                    'descripcion' => 'Descripción del producto 1',
-                    'precio' => 10000,
-                    'stock' => 50,
-                    'categoria_id' => 1,
-                    'imagen' => 'imagenes/producto1.jpg',
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ],
-                [
-                    'nombre' => 'Producto 2',
-                    'descripcion' => 'Descripción del producto 2',
-                    'precio' => 15000,
-                    'stock' => 30,
-                    'categoria_id' => 2,
-                    'imagen' => 'imagenes/producto2.jpg',
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ],
-                [
-                    'nombre' => 'Producto 3',
-                    'descripcion' => 'Descripción del producto 3',
-                    'precio' => 20000,
-                    'stock' => 20,
-                    'categoria_id' => 1,
-                    'imagen' => 'imagenes/producto3.jpg',
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ],
-            ]);
-        }
+        DB::table('productos')->insert([
+            [
+                'nombre' => 'Producto 1',
+                'descripcion' => 'Descripción del producto 1',
+                'precio' => 10000,
+                'stock' => 50,
+                'categoria_id' => 1,
+                'imagen' => 'imagenes/producto1.jpg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nombre' => 'Producto 2',
+                'descripcion' => 'Descripción del producto 2',
+                'precio' => 15000,
+                'stock' => 30,
+                'categoria_id' => 2,
+                'imagen' => 'imagenes/producto2.jpg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nombre' => 'Producto 3',
+                'descripcion' => 'Descripción del producto 3',
+                'precio' => 20000,
+                'stock' => 20,
+                'categoria_id' => 1,
+                'imagen' => 'imagenes/producto3.jpg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            
+        ]);
     }
 }
