@@ -41,7 +41,7 @@ class ProductoSeeder extends Seeder
                 'precio' => 20000,
                 'stock' => 20,
                 'categoria_id' => 1,
-                'imagen' => 'https://eugeniasdelasabana.com/wp-content/uploads/2021/03/tierra-1-600x600.jpg',
+                'imagen' => 'https://eugeniasdelasabana.com/wp-content/uploads/2021/03/eu-1-600x600.jpg',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
