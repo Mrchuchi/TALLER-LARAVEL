@@ -159,3 +159,357 @@ h2 {
     width: 50%;
     border-radius: 6px;
 }
+
+
+.categorias {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #EADBC8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categorias table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.categorias th, .categorias td {
+    padding: 12px;
+    border-bottom: 1px solid #8B5E3C;
+}
+
+.categorias th {
+    background-color: #8B5E3C;
+    color: white;
+    font-weight: bold;
+}
+
+.categorias tr:nth-child(even) {
+    background-color: #F4EDE1;
+}
+
+.categorias tr:hover {
+    background-color: #D8C3A5;
+}
+
+button {
+    background-color: #8B5E3C;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #A67C52;
+}
+
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #8B5E3C;
+    background-color: #F4EDE1;
+    color: #5C3D2E;
+    width: 100%;
+}
+
+.errors {
+    background-color: #FFD1C1;
+    color: #8B0000;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 6px;
+}
+
+
+.categorias, .productos {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #EADBC8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categorias table, .productos table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.categorias th, .categorias td, .productos th, .productos td {
+    padding: 12px;
+    border-bottom: 1px solid #8B5E3C;
+}
+
+.categorias th, .productos th {
+    background-color: #8B5E3C;
+    color: white;
+    font-weight: bold;
+}
+
+.categorias tr:nth-child(even), .productos tr:nth-child(even) {
+    background-color: #F4EDE1;
+}
+
+.categorias tr:hover, .productos tr:hover {
+    background-color: #D8C3A5;
+}
+
+button {
+    background-color: #8B5E3C;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #A67C52;
+}
+
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #8B5E3C;
+    background-color: #F4EDE1;
+    color: #5C3D2E;
+    width: 100%;
+}
+
+.errors {
+    background-color: #FFD1C1;
+    color: #8B0000;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 6px;
+}
+
+
+.categorias, .productos, .articulo {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #EADBC8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categorias table, .productos table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.categorias th, .categorias td, .productos th, .productos td {
+    padding: 12px;
+    border-bottom: 1px solid #8B5E3C;
+}
+
+.categorias th, .productos th {
+    background-color: #8B5E3C;
+    color: white;
+    font-weight: bold;
+}
+
+.categorias tr:nth-child(even), .productos tr:nth-child(even) {
+    background-color: #F4EDE1;
+}
+
+.categorias tr:hover, .productos tr:hover {
+    background-color: #D8C3A5;
+}
+
+.articulo h2 {
+    font-size: 1.5rem;
+    color: #5C3D2E;
+}
+
+.articulo .autor, .articulo .categoria, .articulo .fecha-publicacion {
+    font-size: 1rem;
+    color: #8B5E3C;
+}
+
+.articulo .contenido {
+    font-size: 1.1rem;
+    color: #5C3D2E;
+    margin-top: 10px;
+}
+
+.articulo img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #8B5E3C;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #A67C52;
+}
+
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #8B5E3C;
+    background-color: #F4EDE1;
+    color: #5C3D2E;
+    width: 100%;
+}
+
+.errors {
+    background-color: #FFD1C1;
+    color: #8B0000;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 6px;
+}
+
+.categorias, .productos, .articulo, .articulos {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #EADBC8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categorias table, .productos table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.categorias th, .categorias td, .productos th, .productos td {
+    padding: 12px;
+    border-bottom: 1px solid #8B5E3C;
+}
+
+.categorias th, .productos th {
+    background-color: #8B5E3C;
+    color: white;
+    font-weight: bold;
+}
+
+.categorias tr:nth-child(even), .productos tr:nth-child(even) {
+    background-color: #F4EDE1;
+}
+
+.categorias tr:hover, .productos tr:hover {
+    background-color: #D8C3A5;
+}
+
+.articulo, .articulos article {
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #F4EDE1;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.articulo h2, .articulos h2 {
+    font-size: 1.5rem;
+    color: #5C3D2E;
+}
+
+.articulo .autor, .articulo .categoria, .articulo .fecha-publicacion, .articulos p {
+    font-size: 1rem;
+    color: #8B5E3C;
+}
+
+.articulo .contenido {
+    font-size: 1.1rem;
+    color: #5C3D2E;
+    margin-top: 10px;
+}
+
+.articulo img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.detalles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.detalles a {
+    color: #5C3D2E;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.detalles a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #8B5E3C;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #A67C52;
+}
+
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #8B5E3C;
+    background-color: #F4EDE1;
+    color: #5C3D2E;
+    width: 100%;
+}
+
+.errors {
+    background-color: #FFD1C1;
+    color: #8B0000;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 6px;
+}
