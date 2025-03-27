@@ -29,7 +29,7 @@
         <select name="categoria_id" id="categoria" autocomplete="off">
            
             @foreach($categorias as $categoria)
-            <option value="{{$categoria->id}}">@if(old('categoria_id',$producto['categoria_id'])==$categoria->id)selected @endif>{{$categoria->nombre}}
+            <option value="{{$categoria->id}}">@if(old('categoria_id',$producto['categoria_id'])==$categoria->id)<selected >@endif{{$categoria->nombre}}
         </option>
             @endforeach
 
