@@ -9,15 +9,15 @@
     <p class="categoria">{{$articulo->categoriaBlog->nombre}}</p>
     <p class="contenido">{{$articulo->contenido}}</p>
     <p class="fecha-publicacion">{{$articulo->fecha_publicacion}}</p>
-    <img title="imagen-destacada" src="{{$articulo->imagen_destacada}}" alt="">
+    <img title={{ {__('messages.imageHeightligter')} }}estacada}}" alt="">
     <div class="actions">
         <a href="{{route('articulo.edit',$articulo)}}">
-            <button title="Editar articulo">🖋️</button>
+            <button title="{{ __('messages.editArticle') }}">🖋️</button>
         </a>
         <form action="{{route('articulo.delete',$articulo)}}" method="POST">
             @csrf
             @method('DELETE')
-            <button title="Eliminar articulo">🗑️</button>
+            <button title="{{ __('messages.deleteArticle') }}">🗑️</button>
         </form>
     </div>
     <div class="comentarios">
@@ -29,25 +29,25 @@
             <p class="contenido">{{ $comentario->contenido }}</p>
             <divc class="acciones">
                 <a href="{{ route('comentario.edit', $comentario) }}">
-                    <button title="Editar comentario">🖋️</button>
+                    <button title="{{ __('messages.editComentary') }}">🖋️</button>
                 </a>
                 <form action="{{ route('comentario.delete',$comentario) }}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <button title="Eliminar comentario">🗑️</button>
+                    <button title="{{ __('messages.deleteComentary') }}">🗑️</button>
 
                 </form>
             </div>
         @endforeach
         <div class="nuevo-comentario">
-            <h3>Deja un comentario</h3>
+            <h3>{{ __('messages.leaveAComentary') }}</h3>
             <form action="{{route('comentario.store')}}" method="POST">
                 @csrf
                 <input type="hidden" name="articulo_id" value="{{$articulo->id}}">
-                <input type="text" name="nombre_usuario" placeholder="Nombre de usuario" required>
-                <input type="email" name="email" placeholder="Email de usuario" required>
-                <textarea name="contenido" placeholder="Escribe tu comentario aquí..." required></textarea>
-                <button type="submit">Enviar</button>
+                <input type="text" name="nombre_usuario" placeholder="N{{ __('messages.nameUser') }}" required>
+                <input type="email" name="email" placeholder="{{ __('messages.mailUser') }}" required>
+                <textarea name="contenido" placeholder="{{ __('messages.writeYourComentaryHere') }}" required></textarea>
+                <button type="submit">{{ __('messages.send') }}</button>
         </div>
     </div>
 </div>

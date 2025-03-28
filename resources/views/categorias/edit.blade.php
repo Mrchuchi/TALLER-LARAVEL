@@ -6,9 +6,9 @@
 <table class="categorias">
     <thead>
         <tr>
-            <th>Nombre</th>
-            <th>Descripcion</th>
-            <th>Acciones</th>
+            <th>{{ __('messages.name') }}</th>
+            <th>{{ __('messages.description') }}</th>
+            <th>{{ __('messages.actions') }}</th>
         </tr>
     </thead>
     <tbody>
@@ -20,9 +20,9 @@
                 <td><input value="{{old ('nombre', $categoria['nombre'])}}" type="text" name="nombre" id="nombre" placeholder="nombre"></td>
                 <td><input value="{{old ('descripcion', $categoria['descripcion'])}}" type="text" name="descripcion" id="descripcion" placeholder="descripcion"></td>
                 <td>
-                    <button title="Guardar ediciones">✅</button>
+                    <button title="{{ __('messages.saveEditions') }}">✅</button>
                     <a href="{{route('categoria.index')}}">
-                        <button type="button" title="Cancelar ediciones">❌</button>
+                        <button type="button" title="{{ __('messages.cancelEditions') }}">❌</button>
                     </a>
                 </td>
             </tr>
